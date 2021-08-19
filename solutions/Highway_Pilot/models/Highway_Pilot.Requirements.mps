@@ -18,6 +18,9 @@
   <imports />
   <registry>
     <language id="5ff577d1-1817-495b-9d6c-ff7b52c68609" name="com.mbeddr.formal.req.tl_patterns">
+      <concept id="7240923401194648620" name="com.mbeddr.formal.req.tl_patterns.structure.BeforeScope" flags="ng" index="12ut_k">
+        <child id="7240923401194648621" name="r" index="12ut_l" />
+      </concept>
       <concept id="7240923401194647888" name="com.mbeddr.formal.req.tl_patterns.structure.TLProperty" flags="ng" index="12utKC">
         <child id="7240923401194648611" name="specification" index="12ut_r" />
         <child id="7240923401194648604" name="scope" index="12ut_$" />
@@ -299,6 +302,342 @@
             <node concept="19SGf9" id="752aszejmw2" role="0nzdz">
               <node concept="19SUe$" id="752aszejmw3" role="19SJt6">
                 <property role="19SUeA" value="Lane-change maneuvers shall be completed at constant speed." />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="752aszejmxJ" role="1QQeBF">
+      <property role="0lsPA" value="02" />
+      <node concept="1QQeFk" id="752aszejmxK" role="0nOlf" />
+      <node concept="19SGf9" id="752aszejmxL" role="1QQeG9">
+        <node concept="19SUe$" id="752aszejmxM" role="19SJt6">
+          <property role="19SUeA" value="System operational requirements" />
+        </node>
+      </node>
+      <node concept="0lhDl" id="752aszejmzs" role="1VMWzp">
+        <property role="0lsPA" value="02.01" />
+        <node concept="1QQeFk" id="752aszejmzt" role="0nOlf" />
+        <node concept="19SGf9" id="752aszejmzu" role="1QQeG9">
+          <node concept="19SUe$" id="752aszejmzv" role="19SJt6">
+            <property role="19SUeA" value="Speed range" />
+          </node>
+        </node>
+        <node concept="1QQeAY" id="752aszejmzA" role="1QQeAC">
+          <node concept="0nzK2" id="752aszejmzC" role="1QQeAV">
+            <node concept="19SGf9" id="752aszejmzE" role="0nzdz">
+              <node concept="19SUe$" id="752aszejmzF" role="19SJt6">
+                <property role="19SUeA" value="The highway chauffeur system shall operate across typical highway speed range, depending on the specifications provided by the manufacturer." />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="0lhDl" id="752aszejmzO" role="1VMWzp">
+        <property role="0lsPA" value="02.02" />
+        <node concept="1QQeFk" id="752aszejmzP" role="0nOlf" />
+        <node concept="19SGf9" id="752aszejmzQ" role="1QQeG9">
+          <node concept="19SUe$" id="752aszejmzR" role="19SJt6">
+            <property role="19SUeA" value="Restricted access highways" />
+          </node>
+        </node>
+        <node concept="1QQeAY" id="752aszejm$6" role="1QQeAC">
+          <node concept="0nzK2" id="752aszejm$8" role="1QQeAV">
+            <node concept="19SGf9" id="752aszejm$a" role="0nzdz">
+              <node concept="19SUe$" id="752aszejm$b" role="19SJt6">
+                <property role="19SUeA" value="The highway chauffeur system shall be activated and used only on restricted access highways." />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="0lhDl" id="752aszejm$h" role="1VMWzp">
+        <property role="0lsPA" value="02.03" />
+        <node concept="1QQeFk" id="752aszejm$i" role="0nOlf" />
+        <node concept="19SGf9" id="752aszejm$j" role="1QQeG9">
+          <node concept="19SUe$" id="752aszejm$k" role="19SJt6">
+            <property role="19SUeA" value="Illegal environments" />
+          </node>
+        </node>
+        <node concept="1QQeAY" id="752aszejm$F" role="1QQeAC">
+          <node concept="0nzK2" id="752aszejm$H" role="1QQeAV">
+            <node concept="19SGf9" id="752aszejm$J" role="0nzdz">
+              <node concept="19SUe$" id="752aszejm$K" role="19SJt6">
+                <property role="19SUeA" value="The highway chauffeur system shall not be used in environments such as tunnels, law enforcement checkpoints or construction sites and shall not navigate on-ramps and off-ramps, or other highway junctions." />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="0lhDl" id="752aszejm$Q" role="1VMWzp">
+        <property role="0lsPA" value="02.04" />
+        <node concept="1QQeFk" id="752aszejm$R" role="0nOlf" />
+        <node concept="19SGf9" id="752aszejm$S" role="1QQeG9">
+          <node concept="19SUe$" id="752aszejm$T" role="19SJt6">
+            <property role="19SUeA" value="Exterme weather conditions" />
+          </node>
+        </node>
+        <node concept="1QQeAY" id="752aszejm_o" role="1QQeAC">
+          <node concept="0nzK2" id="752aszejm_q" role="1QQeAV">
+            <node concept="19SGf9" id="752aszejm_s" role="0nzdz">
+              <node concept="19SUe$" id="752aszejm_t" role="19SJt6">
+                <property role="19SUeA" value="The highway chauffeur system shall not operate in extreme weather conditions (e.g low visibility)." />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="0lhDl" id="752aszejm_z" role="1VMWzp">
+        <property role="0lsPA" value="02.05" />
+        <node concept="1QQeFk" id="752aszejm_$" role="0nOlf" />
+        <node concept="19SGf9" id="752aszejm__" role="1QQeG9">
+          <node concept="19SUe$" id="752aszejm_A" role="19SJt6">
+            <property role="19SUeA" value="Clear lane lines" />
+          </node>
+        </node>
+        <node concept="1QQeAY" id="752aszejmAd" role="1QQeAC">
+          <node concept="0nzK2" id="752aszejmAf" role="1QQeAV">
+            <node concept="19SGf9" id="752aszejmAh" role="0nzdz">
+              <node concept="19SUe$" id="752aszejmAi" role="19SJt6">
+                <property role="19SUeA" value="The highway chauffeur system requires clear lane lines to operate normally. In the absence of clear lane markings, the highway chauffeur system shall use a lead vehicle or surrounding landmarks to maintain the vehicle’s position in the lane until either the driver resumes control or the lane markings are re-established." />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="0lhDl" id="752aszejmBw" role="1VMWzp">
+        <property role="0lsPA" value="02.06" />
+        <node concept="1QQeFk" id="752aszejmBx" role="0nOlf" />
+        <node concept="19SGf9" id="752aszejmBy" role="1QQeG9">
+          <node concept="19SUe$" id="752aszejmBz" role="19SJt6">
+            <property role="19SUeA" value="Monitor adjacent lanes" />
+          </node>
+        </node>
+        <node concept="3z7I3Z" id="752aszejmCi" role="1QQeAC">
+          <node concept="12utKC" id="752aszejmCn" role="3z0uXc">
+            <node concept="12ut_k" id="752aszejmCl" role="12ut_$">
+              <node concept="3z7eFS" id="752aszejmCr" role="12ut_l">
+                <node concept="19SGf9" id="752aszejmCt" role="3z7eFT">
+                  <node concept="19SUe$" id="752aszejmCu" role="19SJt6">
+                    <property role="19SUeA" value="initiating a lane change" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="12uYXO" id="752aszejmCz" role="12ut_r">
+              <node concept="3z7eFS" id="752aszejmC_" role="12uYXx">
+                <node concept="19SGf9" id="752aszejmCA" role="3z7eFT">
+                  <node concept="19SUe$" id="752aszejmCB" role="19SJt6">
+                    <property role="19SUeA" value="the highway chauffeur system shall monitor the target adjacent lane to determine if adequate free space is available" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="752aszejmGZ" role="1QQeBF">
+      <property role="0lsPA" value="03" />
+      <node concept="1QQeFk" id="752aszejmH0" role="0nOlf" />
+      <node concept="19SGf9" id="752aszejmH1" role="1QQeG9">
+        <node concept="19SUe$" id="752aszejmH2" role="19SJt6">
+          <property role="19SUeA" value="Component-level requirements" />
+        </node>
+      </node>
+      <node concept="0lhDl" id="752aszejmJA" role="1VMWzp">
+        <property role="0lsPA" value="03.01" />
+        <node concept="1QQeFk" id="752aszejmJB" role="0nOlf" />
+        <node concept="19SGf9" id="752aszejmJC" role="1QQeG9">
+          <node concept="19SUe$" id="752aszejmJD" role="19SJt6">
+            <property role="19SUeA" value="Steering system" />
+          </node>
+        </node>
+        <node concept="0lhDl" id="752aszejmK0" role="1VMWzp">
+          <property role="0lsPA" value="03.01.01" />
+          <node concept="1QQeFk" id="752aszejmK1" role="0nOlf" />
+          <node concept="19SGf9" id="752aszejmK2" role="1QQeG9">
+            <node concept="19SUe$" id="752aszejmK3" role="19SJt6">
+              <property role="19SUeA" value="Torque limits" />
+            </node>
+          </node>
+          <node concept="1QQeAY" id="752aszejmKa" role="1QQeAC">
+            <node concept="0nzK2" id="752aszejmKc" role="1QQeAV">
+              <node concept="19SGf9" id="752aszejmKe" role="0nzdz">
+                <node concept="19SUe$" id="752aszejmKf" role="19SJt6">
+                  <property role="19SUeA" value="Torque limit of the steering system shall be established at a level that allows the driver to manually override the torque requested by the highway chauffeur system." />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="0lhDl" id="752aszejmKl" role="1VMWzp">
+          <property role="0lsPA" value="03.01.02" />
+          <node concept="1QQeFk" id="752aszejmKm" role="0nOlf" />
+          <node concept="19SGf9" id="752aszejmKn" role="1QQeG9">
+            <node concept="19SUe$" id="752aszejmKo" role="19SJt6">
+              <property role="19SUeA" value="Torque authority" />
+            </node>
+          </node>
+          <node concept="1QQeAY" id="752aszejmKB" role="1QQeAC">
+            <node concept="0nzK2" id="752aszejmKD" role="1QQeAV">
+              <node concept="19SGf9" id="752aszejmKF" role="0nzdz">
+                <node concept="19SUe$" id="752aszejmKG" role="19SJt6">
+                  <property role="19SUeA" value="The highway chauffeur system shall have full torque authority over the steering system, as long as the torque authority does not affect functional safety mitigation measures or safe states." />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="0lhDl" id="752aszejmKM" role="1VMWzp">
+          <property role="0lsPA" value="03.01.03" />
+          <node concept="1QQeFk" id="752aszejmKN" role="0nOlf" />
+          <node concept="19SGf9" id="752aszejmKO" role="1QQeG9">
+            <node concept="19SUe$" id="752aszejmKP" role="19SJt6">
+              <property role="19SUeA" value="Primary system" />
+            </node>
+          </node>
+          <node concept="1QQeAY" id="752aszejmLc" role="1QQeAC">
+            <node concept="0nzK2" id="752aszejmLe" role="1QQeAV">
+              <node concept="19SGf9" id="752aszejmLg" role="0nzdz">
+                <node concept="19SUe$" id="752aszejmLh" role="19SJt6">
+                  <property role="19SUeA" value="The steering system shall be the primary system that implements the highway chauffeur system’s lateral control requests.." />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="0lhDl" id="752aszejmLn" role="1VMWzp">
+        <property role="0lsPA" value="03.02" />
+        <node concept="1QQeFk" id="752aszejmLo" role="0nOlf" />
+        <node concept="19SGf9" id="752aszejmLp" role="1QQeG9">
+          <node concept="19SUe$" id="752aszejmLq" role="19SJt6">
+            <property role="19SUeA" value="HMI (Advanced Human-Machine interface)" />
+          </node>
+        </node>
+        <node concept="0lhDl" id="752aszejmLX" role="1VMWzp">
+          <property role="0lsPA" value="03.02.01" />
+          <node concept="1QQeFk" id="752aszejmLY" role="0nOlf" />
+          <node concept="19SGf9" id="752aszejmLZ" role="1QQeG9">
+            <node concept="19SUe$" id="752aszejmM0" role="19SJt6">
+              <property role="19SUeA" value="Notification and alerts" />
+            </node>
+          </node>
+          <node concept="1QQeAY" id="752aszejmM7" role="1QQeAC">
+            <node concept="0nzK2" id="752aszejmM9" role="1QQeAV">
+              <node concept="19SGf9" id="752aszejmMb" role="0nzdz">
+                <node concept="19SUe$" id="752aszejmMc" role="19SJt6">
+                  <property role="19SUeA" value="The HMI shall provide relevant system notifications and alerts to the driver, including control transition notifications." />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="0lhDl" id="752aszejmMi" role="1VMWzp">
+        <property role="0lsPA" value="03.03" />
+        <node concept="1QQeFk" id="752aszejmMj" role="0nOlf" />
+        <node concept="19SGf9" id="752aszejmMk" role="1QQeG9">
+          <node concept="19SUe$" id="752aszejmMl" role="19SJt6">
+            <property role="19SUeA" value="Cameras sensors and radars" />
+          </node>
+        </node>
+        <node concept="0lhDl" id="752aszejmN2" role="1VMWzp">
+          <property role="0lsPA" value="03.03.01" />
+          <node concept="1QQeFk" id="752aszejmN3" role="0nOlf" />
+          <node concept="19SGf9" id="752aszejmN4" role="1QQeG9">
+            <node concept="19SUe$" id="752aszejmN5" role="19SJt6">
+              <property role="19SUeA" value="Detect objects" />
+            </node>
+          </node>
+          <node concept="1QQeAY" id="752aszejmNc" role="1QQeAC">
+            <node concept="0nzK2" id="752aszejmNe" role="1QQeAV">
+              <node concept="19SGf9" id="752aszejmNg" role="0nzdz">
+                <node concept="19SUe$" id="752aszejmNh" role="19SJt6">
+                  <property role="19SUeA" value="Vehicle sensors of the highway chauffeur system shall be able to detect obstacles relevant to the system functions under the range of permitted use cases." />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="0lhDl" id="752aszejmNn" role="1VMWzp">
+          <property role="0lsPA" value="03.03.02" />
+          <node concept="1QQeFk" id="752aszejmNo" role="0nOlf" />
+          <node concept="19SGf9" id="752aszejmNp" role="1QQeG9">
+            <node concept="19SUe$" id="752aszejmNq" role="19SJt6">
+              <property role="19SUeA" value="Safe execution of maneuver" />
+            </node>
+          </node>
+          <node concept="1QQeAY" id="752aszejmND" role="1QQeAC">
+            <node concept="0nzK2" id="752aszejmNF" role="1QQeAV">
+              <node concept="19SGf9" id="752aszejmNH" role="0nzdz">
+                <node concept="19SUe$" id="752aszejmNI" role="19SJt6">
+                  <property role="19SUeA" value="Object detection shall occur early enough such that the vehicle is able to safely execute the subsequent maneuver." />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="0lhDl" id="752aszejmNO" role="1VMWzp">
+          <property role="0lsPA" value="03.03.03" />
+          <node concept="1QQeFk" id="752aszejmNP" role="0nOlf" />
+          <node concept="19SGf9" id="752aszejmNQ" role="1QQeG9">
+            <node concept="19SUe$" id="752aszejmNR" role="19SJt6">
+              <property role="19SUeA" value="Camera transition to safe state" />
+            </node>
+          </node>
+          <node concept="3z7I3Z" id="752aszejmOe" role="1QQeAC">
+            <node concept="12utKC" id="752aszejmOi" role="3z0uXc">
+              <node concept="12uYNE" id="752aszejmOh" role="12ut_$">
+                <node concept="3z7eFS" id="752aszejmOl" role="12uYNq">
+                  <node concept="19SGf9" id="752aszejmOm" role="3z7eFT">
+                    <node concept="19SUe$" id="752aszejmOn" role="19SJt6">
+                      <property role="19SUeA" value="facing any typical camera limitations: low visibility conditions, low contrast, field of views limits, missing lane marking or landmarks" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="12uYXO" id="752aszejmOr" role="12ut_r">
+                <node concept="3z7eFS" id="752aszejmOt" role="12uYXx">
+                  <node concept="19SGf9" id="752aszejmOu" role="3z7eFT">
+                    <node concept="19SUe$" id="752aszejmOv" role="19SJt6">
+                      <property role="19SUeA" value="the highway chauffeur system shall be able to transit in a safe state" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="0lhDl" id="752aszejmOz" role="1VMWzp">
+          <property role="0lsPA" value="03.03.04" />
+          <node concept="1QQeFk" id="752aszejmO$" role="0nOlf" />
+          <node concept="19SGf9" id="752aszejmO_" role="1QQeG9">
+            <node concept="19SUe$" id="752aszejmOA" role="19SJt6">
+              <property role="19SUeA" value="Radar transition to safe state" />
+            </node>
+          </node>
+          <node concept="3z7I3Z" id="752aszejmPb" role="1QQeAC">
+            <node concept="12utKC" id="752aszejmPf" role="3z0uXc">
+              <node concept="12uYNE" id="752aszejmPe" role="12ut_$">
+                <node concept="3z7eFS" id="752aszejmPi" role="12uYNq">
+                  <node concept="19SGf9" id="752aszejmPj" role="3z7eFT">
+                    <node concept="19SUe$" id="752aszejmPk" role="19SJt6">
+                      <property role="19SUeA" value="facing any typical radar limitations: roadway curvature, field of views limits, missing lane marking or landmarks, precipitation on the device cover" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="12uYXO" id="752aszejmPo" role="12ut_r">
+                <node concept="3z7eFS" id="752aszejmPq" role="12uYXx">
+                  <node concept="19SGf9" id="752aszejmPr" role="3z7eFT">
+                    <node concept="19SUe$" id="752aszejmPs" role="19SJt6">
+                      <property role="19SUeA" value="the highway chauffeur system shall be able to transit in a safe state" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
