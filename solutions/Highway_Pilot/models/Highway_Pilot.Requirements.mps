@@ -451,7 +451,7 @@
         <node concept="1QQeFk" id="752aszejmJB" role="0nOlf" />
         <node concept="19SGf9" id="752aszejmJC" role="1QQeG9">
           <node concept="19SUe$" id="752aszejmJD" role="19SJt6">
-            <property role="19SUeA" value="Steering system" />
+            <property role="19SUeA" value="Steering system requirements" />
           </node>
         </node>
         <node concept="0lhDl" id="752aszejmK0" role="1VMWzp">
@@ -514,7 +514,7 @@
         <node concept="1QQeFk" id="752aszejmLo" role="0nOlf" />
         <node concept="19SGf9" id="752aszejmLp" role="1QQeG9">
           <node concept="19SUe$" id="752aszejmLq" role="19SJt6">
-            <property role="19SUeA" value="HMI (Advanced Human-Machine interface)" />
+            <property role="19SUeA" value="HMI (Advanced Human-Machine interface) requirements" />
           </node>
         </node>
         <node concept="0lhDl" id="752aszejmLX" role="1VMWzp">
@@ -541,7 +541,7 @@
         <node concept="1QQeFk" id="752aszejmMj" role="0nOlf" />
         <node concept="19SGf9" id="752aszejmMk" role="1QQeG9">
           <node concept="19SUe$" id="752aszejmMl" role="19SJt6">
-            <property role="19SUeA" value="Cameras sensors and radars" />
+            <property role="19SUeA" value="Cameras sensors and radars requirements" />
           </node>
         </node>
         <node concept="0lhDl" id="752aszejmN2" role="1VMWzp">
@@ -637,6 +637,285 @@
                       <property role="19SUeA" value="the highway chauffeur system shall be able to transit in a safe state" />
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="0lhDl" id="752aszejmPw" role="1VMWzp">
+        <property role="0lsPA" value="03.04" />
+        <node concept="1QQeFk" id="752aszejmPx" role="0nOlf" />
+        <node concept="19SGf9" id="752aszejmPy" role="1QQeG9">
+          <node concept="19SUe$" id="752aszejmPz" role="19SJt6">
+            <property role="19SUeA" value="GPS Requirements" />
+          </node>
+        </node>
+        <node concept="0lhDl" id="752aszejmR0" role="1VMWzp">
+          <property role="0lsPA" value="03.04.01" />
+          <node concept="1QQeFk" id="752aszejmR1" role="0nOlf" />
+          <node concept="19SGf9" id="752aszejmR2" role="1QQeG9">
+            <node concept="19SUe$" id="752aszejmR3" role="19SJt6">
+              <property role="19SUeA" value="Provide additional input" />
+            </node>
+          </node>
+          <node concept="1QQeAY" id="752aszejmRa" role="1QQeAC">
+            <node concept="0nzK2" id="752aszejmRc" role="1QQeAV">
+              <node concept="19SGf9" id="752aszejmRe" role="0nzdz">
+                <node concept="19SUe$" id="752aszejmRf" role="19SJt6">
+                  <property role="19SUeA" value="GPS and maps shall provide additional input to the highway chauffeur system about the host vehicle’s location." />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="0lhDl" id="752aszejmRl" role="1VMWzp">
+          <property role="0lsPA" value="03.04.02" />
+          <node concept="1QQeFk" id="752aszejmRm" role="0nOlf" />
+          <node concept="19SGf9" id="752aszejmRn" role="1QQeG9">
+            <node concept="19SUe$" id="752aszejmRo" role="19SJt6">
+              <property role="19SUeA" value="Vehicle position" />
+            </node>
+          </node>
+          <node concept="1QQeAY" id="752aszejmRB" role="1QQeAC">
+            <node concept="0nzK2" id="752aszejmRD" role="1QQeAV">
+              <node concept="19SGf9" id="752aszejmRF" role="0nzdz">
+                <node concept="19SUe$" id="752aszejmRG" role="19SJt6">
+                  <property role="19SUeA" value="The highway chauffeur system shall be able to determine the vehicle’s lane position according to the GPS coordinates" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="0lhDl" id="752aszejmRM" role="1VMWzp">
+          <property role="0lsPA" value="03.04.03" />
+          <node concept="1QQeFk" id="752aszejmRN" role="0nOlf" />
+          <node concept="19SGf9" id="752aszejmRO" role="1QQeG9">
+            <node concept="19SUe$" id="752aszejmRP" role="19SJt6">
+              <property role="19SUeA" value="Transition to safe state" />
+            </node>
+          </node>
+          <node concept="1QQeAY" id="752aszejmSc" role="1QQeAC">
+            <node concept="0nzK2" id="752aszejmSe" role="1QQeAV">
+              <node concept="19SGf9" id="752aszejmSg" role="0nzdz">
+                <node concept="19SUe$" id="752aszejmSh" role="19SJt6">
+                  <property role="19SUeA" value="The highway chauffeur system shall be able to transit in a safe state  in case of facing any typical GPS limitations: physical blockage of the satellite signal (e.g., tunnels), complex environments that reflect the satellite signal (e.g., urban canyons), precision, accuracy of current map data," />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="0lhDl" id="752aszejmSn" role="1VMWzp">
+        <property role="0lsPA" value="03.05" />
+        <node concept="1QQeFk" id="752aszejmSo" role="0nOlf" />
+        <node concept="19SGf9" id="752aszejmSp" role="1QQeG9">
+          <node concept="19SUe$" id="752aszejmSq" role="19SJt6">
+            <property role="19SUeA" value="Perception algorithms requirements" />
+          </node>
+        </node>
+        <node concept="0lhDl" id="752aszejn3B" role="1VMWzp">
+          <property role="0lsPA" value="03.05.01" />
+          <node concept="1QQeFk" id="752aszejn3C" role="0nOlf" />
+          <node concept="19SGf9" id="752aszejn3D" role="1QQeG9">
+            <node concept="19SUe$" id="752aszejn3E" role="19SJt6">
+              <property role="19SUeA" value="Lane model perception algorithm" />
+            </node>
+          </node>
+          <node concept="1QQeAY" id="752aszejn3L" role="1QQeAC">
+            <node concept="0nzK2" id="752aszejn3N" role="1QQeAV">
+              <node concept="19SGf9" id="752aszejn3P" role="0nzdz">
+                <node concept="19SUe$" id="752aszejn3Q" role="19SJt6">
+                  <property role="19SUeA" value="The lane model perception algorithm shall receive raw data on the lane markings and road edges from the camera sensor and process the information to determine the lane and roadway boundaries." />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="0lhDl" id="752aszejn3W" role="1VMWzp">
+          <property role="0lsPA" value="03.05.02" />
+          <node concept="1QQeFk" id="752aszejn3X" role="0nOlf" />
+          <node concept="19SGf9" id="752aszejn3Y" role="1QQeG9">
+            <node concept="19SUe$" id="752aszejn3Z" role="19SJt6">
+              <property role="19SUeA" value="Fusion tracker perception algorithm" />
+            </node>
+          </node>
+          <node concept="1QQeAY" id="752aszejn4e" role="1QQeAC">
+            <node concept="0nzK2" id="752aszejn4g" role="1QQeAV">
+              <node concept="19SGf9" id="752aszejn4i" role="0nzdz">
+                <node concept="19SUe$" id="752aszejn4j" role="19SJt6">
+                  <property role="19SUeA" value="The fusion tracker perception algorithm shall receive raw data from the vehicle sensors about objects in a defined boundary surrounding the vehicle and create a fusion map that contains the instantaneous position of all detected objects within the defined boundary." />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="0lhDl" id="752aszejn4p" role="1VMWzp">
+          <property role="0lsPA" value="03.05.03" />
+          <node concept="1QQeFk" id="752aszejn4q" role="0nOlf" />
+          <node concept="19SGf9" id="752aszejn4r" role="1QQeG9">
+            <node concept="19SUe$" id="752aszejn4s" role="19SJt6">
+              <property role="19SUeA" value="Host vehicle state algorithm" />
+            </node>
+          </node>
+          <node concept="1QQeAY" id="752aszejn4N" role="1QQeAC">
+            <node concept="0nzK2" id="752aszejn4P" role="1QQeAV">
+              <node concept="19SGf9" id="752aszejn4R" role="0nzdz">
+                <node concept="19SUe$" id="752aszejn4S" role="19SJt6">
+                  <property role="19SUeA" value="The host vehicle state algorithm shall collect relevant data on the vehicle’s operating state from other vehicle systems (including speed, yaw rate, powertrain status, steering system status, and brake system status)." />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="0lhDl" id="752aszejn4Y" role="1VMWzp">
+          <property role="0lsPA" value="03.05.04" />
+          <node concept="1QQeFk" id="752aszejn4Z" role="0nOlf" />
+          <node concept="19SGf9" id="752aszejn50" role="1QQeG9">
+            <node concept="19SUe$" id="752aszejn51" role="19SJt6">
+              <property role="19SUeA" value="Vehicle position algorithm" />
+            </node>
+          </node>
+          <node concept="1QQeAY" id="752aszejn5w" role="1QQeAC">
+            <node concept="0nzK2" id="752aszejn5y" role="1QQeAV">
+              <node concept="19SGf9" id="752aszejn5$" role="0nzdz">
+                <node concept="19SUe$" id="752aszejn5_" role="19SJt6">
+                  <property role="19SUeA" value="The vehicle position algorithm shall compare GPS information with the road model developed by the road model algorithm using on-board vehicle sensors in order to determine the vehicle location and heading in the lane and to predict vehicle’s path." />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="0lhDl" id="752aszejn5F" role="1VMWzp">
+          <property role="0lsPA" value="03.05.05" />
+          <node concept="1QQeFk" id="752aszejn5G" role="0nOlf" />
+          <node concept="19SGf9" id="752aszejn5H" role="1QQeG9">
+            <node concept="19SUe$" id="752aszejn5I" role="19SJt6">
+              <property role="19SUeA" value="Object trail/tracker algorithm " />
+            </node>
+          </node>
+          <node concept="1QQeAY" id="752aszejn6l" role="1QQeAC">
+            <node concept="0nzK2" id="752aszejn6n" role="1QQeAV">
+              <node concept="19SGf9" id="752aszejn6p" role="0nzdz">
+                <node concept="19SUe$" id="752aszejn6q" role="19SJt6">
+                  <property role="19SUeA" value="The object trail/tracker algorithm shall track the behavior of existing objects in the region of interest (e.g., velocity and object trail). " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="0lhDl" id="752aszejn6w" role="1VMWzp">
+          <property role="0lsPA" value="03.05.06" />
+          <node concept="1QQeFk" id="752aszejn6x" role="0nOlf" />
+          <node concept="19SGf9" id="752aszejn6y" role="1QQeG9">
+            <node concept="19SUe$" id="752aszejn6z" role="19SJt6">
+              <property role="19SUeA" value="Road model algorithm" />
+            </node>
+          </node>
+          <node concept="1QQeAY" id="752aszejn7i" role="1QQeAC">
+            <node concept="0nzK2" id="752aszejn7k" role="1QQeAV">
+              <node concept="19SGf9" id="752aszejn7m" role="0nzdz">
+                <node concept="19SUe$" id="752aszejn7n" role="19SJt6">
+                  <property role="19SUeA" value="The road model shall integrate data from the other algorithms to develop a model of the surrounding environment." />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="0lhDl" id="752aszejn7t" role="1VMWzp">
+          <property role="0lsPA" value="03.06.07" />
+          <node concept="1QQeFk" id="752aszejn7u" role="0nOlf" />
+          <node concept="19SGf9" id="752aszejn7v" role="1QQeG9">
+            <node concept="19SUe$" id="752aszejn7w" role="19SJt6">
+              <property role="19SUeA" value="Free space algorithm " />
+            </node>
+          </node>
+          <node concept="1QQeAY" id="752aszejn8n" role="1QQeAC">
+            <node concept="0nzK2" id="752aszejn8p" role="1QQeAV">
+              <node concept="19SGf9" id="752aszejn8r" role="0nzdz">
+                <node concept="19SUe$" id="752aszejn8s" role="19SJt6">
+                  <property role="19SUeA" value="The free space algorithm shall use outputs of other algorithms to develop a grid map that predicts of areas that are free of objects, which can then be used for path planning." />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="0lhDl" id="752aszejn8y" role="1VMWzp">
+        <property role="0lsPA" value="03.07" />
+        <node concept="1QQeFk" id="752aszejn8z" role="0nOlf" />
+        <node concept="19SGf9" id="752aszejn8$" role="1QQeG9">
+          <node concept="19SUe$" id="752aszejn8_" role="19SJt6">
+            <property role="19SUeA" value="Path planning algorithm requirements" />
+          </node>
+        </node>
+        <node concept="0lhDl" id="752aszejnhw" role="1VMWzp">
+          <property role="0lsPA" value="03.07.01" />
+          <node concept="1QQeFk" id="752aszejnhx" role="0nOlf" />
+          <node concept="19SGf9" id="752aszejnhy" role="1QQeG9">
+            <node concept="19SUe$" id="752aszejnhz" role="19SJt6">
+              <property role="19SUeA" value="Situation assessment algorithm" />
+            </node>
+          </node>
+          <node concept="1QQeAY" id="752aszejnhE" role="1QQeAC">
+            <node concept="0nzK2" id="752aszejnhG" role="1QQeAV">
+              <node concept="19SGf9" id="752aszejnhI" role="0nzdz">
+                <node concept="19SUe$" id="752aszejnhJ" role="19SJt6">
+                  <property role="19SUeA" value="The situation assessment algorithm shall augment the environmental model with feature-specific goals and objectives. " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="0lhDl" id="752aszejnhP" role="1VMWzp">
+          <property role="0lsPA" value="03.07.02" />
+          <node concept="1QQeFk" id="752aszejnhQ" role="0nOlf" />
+          <node concept="19SGf9" id="752aszejnhR" role="1QQeG9">
+            <node concept="19SUe$" id="752aszejnhS" role="19SJt6">
+              <property role="19SUeA" value="Decision-making algorithm " />
+            </node>
+          </node>
+          <node concept="1QQeAY" id="752aszejni7" role="1QQeAC">
+            <node concept="0nzK2" id="752aszejni9" role="1QQeAV">
+              <node concept="19SGf9" id="752aszejnib" role="0nzdz">
+                <node concept="19SUe$" id="752aszejnic" role="19SJt6">
+                  <property role="19SUeA" value="Decision-making algorithm shall describe the process of using the information from the situation assessment to identify and select possible maneuvers to achieve the system goals." />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="0lhDl" id="752aszejnii" role="1VMWzp">
+          <property role="0lsPA" value="03.07.03" />
+          <node concept="1QQeFk" id="752aszejnij" role="0nOlf" />
+          <node concept="19SGf9" id="752aszejnik" role="1QQeG9">
+            <node concept="19SUe$" id="752aszejnil" role="19SJt6">
+              <property role="19SUeA" value="Driver intent algorithm " />
+            </node>
+          </node>
+          <node concept="1QQeAY" id="752aszejniG" role="1QQeAC">
+            <node concept="0nzK2" id="752aszejniI" role="1QQeAV">
+              <node concept="19SGf9" id="752aszejniK" role="0nzdz">
+                <node concept="19SUe$" id="752aszejniL" role="19SJt6">
+                  <property role="19SUeA" value="The driver intent algorithm shall evaluate the driver’s inputs via the steering wheel and foot pedals to determine if the driver is attempting to resume driving manually." />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="0lhDl" id="752aszejniR" role="1VMWzp">
+          <property role="0lsPA" value="03.07.04" />
+          <node concept="1QQeFk" id="752aszejniS" role="0nOlf" />
+          <node concept="19SGf9" id="752aszejniT" role="1QQeG9">
+            <node concept="19SUe$" id="752aszejniU" role="19SJt6">
+              <property role="19SUeA" value="Steerable path algorithm" />
+            </node>
+          </node>
+          <node concept="1QQeAY" id="752aszejnjp" role="1QQeAC">
+            <node concept="0nzK2" id="752aszejnjr" role="1QQeAV">
+              <node concept="19SGf9" id="752aszejnjt" role="0nzdz">
+                <node concept="19SUe$" id="752aszejnju" role="19SJt6">
+                  <property role="19SUeA" value="The steerable path algorithm shall use the environmental model to determine a lateral trajectory for the host vehicle based on the action selected by the system (lane centering or lane changing)." />
                 </node>
               </node>
             </node>
