@@ -2,6 +2,11 @@
 <model ref="r:7346589d-f1b2-43b9-9186-c40055a4e686(Highway_Pilot.Requirements)">
   <persistence version="9" />
   <languages>
+    <use id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara" version="0" />
+    <use id="dc773f77-cced-42c8-ba62-465140b810a5" name="com.fasten.safety.fmea.iso26262" version="0" />
+    <use id="f610e51f-b05d-4ea8-a354-7ee51a81bcbc" name="com.fasten.safety.hazop.iso26262" version="0" />
+    <use id="a798113f-e2cd-4e21-a8e2-ca1903cb9c43" name="com.mbeddr.formal.safety.iso26262" version="1" />
+    <use id="499b9416-98c1-4b55-b171-aed5472d5e5c" name="com.mbeddr.formal.safety.iso15026" version="0" />
     <devkit ref="3970a543-1808-4b9f-a378-71f15d96d819(fasten.safety.hara)" />
     <devkit ref="b64463ba-ae31-4cf7-be7b-afc13cab4daa(fasten.safety.gsn)" />
     <devkit ref="ac9a2847-3512-4af0-8db9-c20abbe2720a(fasten.safety)" />
@@ -76,14 +81,52 @@
         <child id="4908298719893728837" name="requirements" index="1QQeBF" />
       </concept>
     </language>
+    <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
+      <concept id="9102875167978228299" name="com.mbeddr.formal.safety.hara.structure.IHazardLike" flags="ng" index="8gIbR">
+        <property id="3226630706269685486" name="id" index="0lsPB" />
+      </concept>
+      <concept id="9102875167978228288" name="com.mbeddr.formal.safety.hara.structure.IHazardsContainer" flags="ng" index="8gIbW">
+        <child id="9102875167978228305" name="hazards" index="8gIbH" />
+      </concept>
+      <concept id="9102875167978180720" name="com.mbeddr.formal.safety.hara.structure.Hazard" flags="ng" index="8gVzc">
+        <child id="7926133672145657778" name="losses" index="3Zv_sA" />
+      </concept>
+      <concept id="9102875167978180681" name="com.mbeddr.formal.safety.hara.structure.HazardsList" flags="ng" index="8gVzP" />
+      <concept id="2626862697025835302" name="com.mbeddr.formal.safety.hara.structure.Losses" flags="ng" index="2HxQMi">
+        <child id="2626862697025835303" name="losses" index="2HxQMj" />
+      </concept>
+      <concept id="2626862697025835278" name="com.mbeddr.formal.safety.hara.structure.Loss" flags="ng" index="2HxQMU">
+        <property id="2626862697025835281" name="id" index="2HxQM_" />
+      </concept>
+      <concept id="7926133672145657758" name="com.mbeddr.formal.safety.hara.structure.LossRef" flags="ng" index="3Zv_sa">
+        <reference id="7926133672145657759" name="loss" index="3Zv_sb" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="a798113f-e2cd-4e21-a8e2-ca1903cb9c43" name="com.mbeddr.formal.safety.iso26262">
+      <concept id="2392944874760339599" name="com.mbeddr.formal.safety.iso26262.structure.ISO26262Hazard" flags="ng" index="1a6Z8w">
+        <child id="5861696777036826313" name="hazardContexts" index="3h3uzw" />
+      </concept>
+      <concept id="5861696777036874339" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituationsCatalogue" flags="ng" index="3h3iLa">
+        <child id="5861696777036914244" name="operationalSituationDeclarations" index="3h3F1H" />
+      </concept>
+      <concept id="5861696777036874343" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituationDeclaration" flags="ng" index="3h3iLe">
+        <child id="5861696777036874344" name="description" index="3h3iL1" />
+      </concept>
+      <concept id="5861696777036826303" name="com.mbeddr.formal.safety.iso26262.structure.HazardContext" flags="ng" index="3h3uym">
+        <reference id="5861696777036874408" name="operationalSituationDeclaration" index="3h3iM1" />
+      </concept>
+    </language>
   </registry>
   <node concept="1QQeGf" id="752aszedRxg">
-    <property role="TrG5h" value="Highway chauffeur system requirements" />
+    <property role="TrG5h" value="000_Highway_Chauffeur_System_Requirements" />
     <node concept="0lhDl" id="752aszedRxi" role="1QQeBF">
       <property role="0lsPA" value="01" />
       <node concept="1QQeFk" id="752aszedRxj" role="0nOlf" />
@@ -681,7 +724,7 @@
             <node concept="0nzK2" id="752aszejmRD" role="1QQeAV">
               <node concept="19SGf9" id="752aszejmRF" role="0nzdz">
                 <node concept="19SUe$" id="752aszejmRG" role="19SJt6">
-                  <property role="19SUeA" value="The highway chauffeur system shall be able to determine the vehicle’s lane position according to the GPS coordinates" />
+                  <property role="19SUeA" value="The highway chauffeur system shall be able to determine the vehicle’s lane position according to the GPS coordinates." />
                 </node>
               </node>
             </node>
@@ -699,7 +742,7 @@
             <node concept="0nzK2" id="752aszejmSe" role="1QQeAV">
               <node concept="19SGf9" id="752aszejmSg" role="0nzdz">
                 <node concept="19SUe$" id="752aszejmSh" role="19SJt6">
-                  <property role="19SUeA" value="The highway chauffeur system shall be able to transit in a safe state  in case of facing any typical GPS limitations: physical blockage of the satellite signal (e.g., tunnels), complex environments that reflect the satellite signal (e.g., urban canyons), precision, accuracy of current map data," />
+                  <property role="19SUeA" value="The highway chauffeur system shall be able to transit in a safe state  in case of facing any typical GPS limitations: physical blockage of the satellite signal (e.g., tunnels), complex environments that reflect the satellite signal (e.g., urban canyons), precision, accuracy of current map data." />
                 </node>
               </node>
             </node>
@@ -921,6 +964,401 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2HxQMi" id="2AvdpHj_7CT">
+    <property role="TrG5h" value="010_Highway_Chauffeur_System_Losses" />
+    <node concept="2HxQMU" id="3Jn$RV2VwqU" role="2HxQMj">
+      <property role="TrG5h" value="Loss of life or serious injury of in or out of the vehicle humans." />
+      <property role="2HxQM_" value="L01" />
+    </node>
+    <node concept="2HxQMU" id="3Jn$RV2VwqV" role="2HxQMj">
+      <property role="TrG5h" value="Property damage due to a vehicle collision." />
+      <property role="2HxQM_" value="L02" />
+    </node>
+    <node concept="2HxQMU" id="2AvdpHj_7Dd" role="2HxQMj">
+      <property role="TrG5h" value="Right/Left Roadside departure." />
+      <property role="2HxQM_" value="L02.1" />
+    </node>
+    <node concept="2HxQMU" id="2AvdpHj_7Dl" role="2HxQMj">
+      <property role="2HxQM_" value="L02.2" />
+      <property role="TrG5h" value="Rear end collision." />
+    </node>
+    <node concept="2HxQMU" id="55oVyA0sYep" role="2HxQMj">
+      <property role="2HxQM_" value="L02.3" />
+      <property role="TrG5h" value="Sideswipe accident." />
+    </node>
+    <node concept="2HxQMU" id="2AvdpHj_7DI" role="2HxQMj">
+      <property role="2HxQM_" value="L02.4" />
+      <property role="TrG5h" value="Head-on accident." />
+    </node>
+    <node concept="2HxQMU" id="2AvdpHj_7HK" role="2HxQMj">
+      <property role="2HxQM_" value="L02.5" />
+      <property role="TrG5h" value="Forward impact." />
+    </node>
+  </node>
+  <node concept="8gVzP" id="2AvdpHj_7Eg">
+    <property role="TrG5h" value="_012_Highway_Chauffeur_System_Vehicle-Level-Hazards" />
+    <node concept="8gVzc" id="2AvdpHj_7Eh" role="8gIbH">
+      <property role="TrG5h" value="Lane or roadway departure while the system is engaged." />
+      <property role="0lsPB" value="H1" />
+      <node concept="3Zv_sa" id="2AvdpHj_7EV" role="3Zv_sA">
+        <ref role="3Zv_sb" node="2AvdpHj_7Dd" resolve="Right/Left Roadside departure." />
+      </node>
+    </node>
+    <node concept="8gVzc" id="2AvdpHj_7Er" role="8gIbH">
+      <property role="0lsPB" value="H2" />
+      <property role="TrG5h" value="Lane change into an obstructed or occupied space in the target lane." />
+      <node concept="3Zv_sa" id="2AvdpHj_7EX" role="3Zv_sA">
+        <ref role="3Zv_sb" node="55oVyA0sYep" resolve="Sideswipe accident." />
+      </node>
+    </node>
+    <node concept="8gVzc" id="2AvdpHj_7Ez" role="8gIbH">
+      <property role="0lsPB" value="H3" />
+      <property role="TrG5h" value="Vehicle does not complete the lane change (partially between lanes)." />
+      <node concept="3Zv_sa" id="2AvdpHj_7NW" role="3Zv_sA">
+        <ref role="3Zv_sb" node="55oVyA0sYep" resolve="Sideswipe accident." />
+      </node>
+    </node>
+    <node concept="8gVzc" id="2AvdpHj_7EP" role="8gIbH">
+      <property role="0lsPB" value="H4" />
+      <property role="TrG5h" value="System interferes with operation of a higher-priority safety-critical system." />
+      <node concept="3Zv_sa" id="2AvdpHj_7F1" role="3Zv_sA">
+        <ref role="3Zv_sb" node="3Jn$RV2VwqV" resolve="Property damage due to a vehicle collision." />
+      </node>
+      <node concept="3Zv_sa" id="2AvdpHj_7OZ" role="3Zv_sA">
+        <ref role="3Zv_sb" node="3Jn$RV2VwqU" resolve="Loss of life or serious injury of in or out of the vehicle humans." />
+      </node>
+    </node>
+  </node>
+  <node concept="3h3iLa" id="2AvdpHj_7Fe">
+    <property role="TrG5h" value="_011_Highway_Chauffeur_System_Operational_Situations" />
+    <node concept="3h3iLe" id="55oVyA0sYeZ" role="3h3F1H">
+      <property role="TrG5h" value="OS1" />
+      <node concept="19SGf9" id="55oVyA0sYf0" role="3h3iL1">
+        <node concept="19SUe$" id="55oVyA0sYf1" role="19SJt6">
+          <property role="19SUeA" value="when traveling on a paved/gravel shoulder lane, with non-roadway users permitted on the side of the road." />
+        </node>
+      </node>
+    </node>
+    <node concept="3h3iLe" id="2AvdpHj_7IM" role="3h3F1H">
+      <property role="TrG5h" value="OS2" />
+      <node concept="19SGf9" id="2AvdpHj_7IN" role="3h3iL1">
+        <node concept="19SUe$" id="2AvdpHj_7IO" role="19SJt6">
+          <property role="19SUeA" value="when traveling on a paved/gravel shoulder lane, with non-roadway users NOT permitted on the side of the road." />
+        </node>
+      </node>
+    </node>
+    <node concept="3h3iLe" id="2AvdpHj_7IV" role="3h3F1H">
+      <property role="TrG5h" value="OS3" />
+      <node concept="19SGf9" id="2AvdpHj_7IW" role="3h3iL1">
+        <node concept="19SUe$" id="2AvdpHj_7IX" role="19SJt6">
+          <property role="19SUeA" value="when traveling on a single lane roadway, with non-roadway users permitted on the side of the road." />
+        </node>
+      </node>
+    </node>
+    <node concept="3h3iLe" id="2AvdpHj_7J7" role="3h3F1H">
+      <property role="TrG5h" value="OS4" />
+      <node concept="19SGf9" id="2AvdpHj_7J8" role="3h3iL1">
+        <node concept="19SUe$" id="2AvdpHj_7J9" role="19SJt6">
+          <property role="19SUeA" value="when traveling on a single lane roadway, with non-roadway users NOT permitted on the side of the road." />
+        </node>
+      </node>
+    </node>
+    <node concept="3h3iLe" id="2AvdpHj_7JS" role="3h3F1H">
+      <property role="TrG5h" value="OS5" />
+      <node concept="19SGf9" id="2AvdpHj_7JT" role="3h3iL1">
+        <node concept="19SUe$" id="2AvdpHj_7JU" role="19SJt6">
+          <property role="19SUeA" value="when traveling on a multi-lane roadway or in a managed lane (e.g., HOV lane)." />
+        </node>
+      </node>
+    </node>
+    <node concept="3h3iLe" id="2AvdpHj_7Ka" role="3h3F1H">
+      <property role="TrG5h" value="OS6" />
+      <node concept="19SGf9" id="2AvdpHj_7Kb" role="3h3iL1">
+        <node concept="19SUe$" id="2AvdpHj_7Kc" role="19SJt6">
+          <property role="19SUeA" value="when traveling in a reversible lane." />
+        </node>
+      </node>
+    </node>
+    <node concept="3h3iLe" id="2AvdpHj_7Pn" role="3h3F1H">
+      <property role="TrG5h" value="OS7" />
+      <node concept="19SGf9" id="2AvdpHj_7Po" role="3h3iL1">
+        <node concept="19SUe$" id="2AvdpHj_7Pp" role="19SJt6">
+          <property role="19SUeA" value="when traveling on a roadway that permits non-vehicles on the road." />
+        </node>
+      </node>
+    </node>
+    <node concept="3h3iLe" id="2AvdpHj_7RP" role="3h3F1H">
+      <property role="TrG5h" value="OS8" />
+      <node concept="19SGf9" id="2AvdpHj_7RQ" role="3h3iL1">
+        <node concept="19SUe$" id="2AvdpHj_7RR" role="19SJt6">
+          <property role="19SUeA" value="when traveling on a paved/gravel shoulder lane, and non-vehicles are NOT permitted on the road." />
+        </node>
+      </node>
+    </node>
+    <node concept="3h3iLe" id="2AvdpHj_7Sm" role="3h3F1H">
+      <property role="TrG5h" value="OS9" />
+      <node concept="19SGf9" id="2AvdpHj_7Sn" role="3h3iL1">
+        <node concept="19SUe$" id="2AvdpHj_7So" role="19SJt6">
+          <property role="19SUeA" value="when traveling on a multi-lane roadway or on a managed lane (e.g., HOV), and non-vehicles are NOT permitted on the road." />
+        </node>
+      </node>
+    </node>
+    <node concept="3h3iLe" id="2AvdpHj_7SW" role="3h3F1H">
+      <property role="TrG5h" value="OS10" />
+      <node concept="19SGf9" id="2AvdpHj_7SX" role="3h3iL1">
+        <node concept="19SUe$" id="2AvdpHj_7SY" role="19SJt6">
+          <property role="19SUeA" value="when traveling on a single-lane roadway or in a reversible lane, and non-vehicles are NOT permitted on the road." />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="8gVzP" id="2AvdpHj_7GX">
+    <property role="TrG5h" value="_012_Highway_Chauffeur_System_For_H1" />
+    <property role="3GE5qa" value="012_Risk_Assessment_For_Vehicle_Level_Hazards" />
+    <node concept="8gVzc" id="2AvdpHj_7GY" role="8gIbH">
+      <property role="0lsPB" value="H1" />
+      <property role="TrG5h" value="Lane or roadway departure while the system is engaged." />
+      <node concept="3Zv_sa" id="2AvdpHj_7Ha" role="3Zv_sA">
+        <ref role="3Zv_sb" node="2AvdpHj_7Dd" resolve="Right/Left Roadside departure." />
+      </node>
+    </node>
+    <node concept="1a6Z8w" id="2AvdpHj_7KD" role="8gIbH">
+      <property role="0lsPB" value="H1.1" />
+      <property role="TrG5h" value="Vehicle departs the lane or roadway" />
+      <node concept="3h3uym" id="2AvdpHj_7KI" role="3h3uzw">
+        <ref role="3h3iM1" node="55oVyA0sYeZ" resolve="OS1" />
+      </node>
+      <node concept="3Zv_sa" id="2AvdpHj_7M8" role="3Zv_sA">
+        <ref role="3Zv_sb" node="2AvdpHj_7HK" resolve="Forward impact." />
+      </node>
+    </node>
+    <node concept="1a6Z8w" id="2AvdpHj_7L1" role="8gIbH">
+      <property role="0lsPB" value="H1.2" />
+      <property role="TrG5h" value="Vehicle departs the lane or roadway" />
+      <node concept="3h3uym" id="2AvdpHj_7Lt" role="3h3uzw">
+        <ref role="3h3iM1" node="2AvdpHj_7IM" resolve="OS2" />
+      </node>
+      <node concept="3Zv_sa" id="2AvdpHj_7Me" role="3Zv_sA">
+        <ref role="3Zv_sb" node="2AvdpHj_7Dd" resolve="Right/Left Roadside departure." />
+      </node>
+    </node>
+    <node concept="1a6Z8w" id="2AvdpHj_7Lh" role="8gIbH">
+      <property role="0lsPB" value="H1.3" />
+      <property role="TrG5h" value="Vehicle departs the lane or roadway" />
+      <node concept="3h3uym" id="2AvdpHj_7Lv" role="3h3uzw">
+        <ref role="3h3iM1" node="2AvdpHj_7IV" resolve="OS3" />
+      </node>
+      <node concept="3Zv_sa" id="2AvdpHj_7Mc" role="3Zv_sA">
+        <ref role="3Zv_sb" node="2AvdpHj_7HK" resolve="Forward impact." />
+      </node>
+    </node>
+    <node concept="1a6Z8w" id="2AvdpHj_7Li" role="8gIbH">
+      <property role="0lsPB" value="H1.4" />
+      <property role="TrG5h" value="Vehicle departs the lane or roadway" />
+      <node concept="3h3uym" id="2AvdpHj_7Lz" role="3h3uzw">
+        <ref role="3h3iM1" node="2AvdpHj_7J7" resolve="OS4" />
+      </node>
+      <node concept="3Zv_sa" id="2AvdpHj_7Mg" role="3Zv_sA">
+        <ref role="3Zv_sb" node="2AvdpHj_7Dd" resolve="Right/Left Roadside departure." />
+      </node>
+    </node>
+    <node concept="1a6Z8w" id="2AvdpHj_7Lj" role="8gIbH">
+      <property role="0lsPB" value="H1.5" />
+      <property role="TrG5h" value="Vehicle departs the lane or roadway" />
+      <node concept="3h3uym" id="2AvdpHj_7L_" role="3h3uzw">
+        <ref role="3h3iM1" node="2AvdpHj_7JS" resolve="OS5" />
+      </node>
+      <node concept="3Zv_sa" id="2AvdpHj_7Mi" role="3Zv_sA">
+        <ref role="3Zv_sb" node="55oVyA0sYep" resolve="Sideswipe accident." />
+      </node>
+    </node>
+    <node concept="1a6Z8w" id="2AvdpHj_7LQ" role="8gIbH">
+      <property role="0lsPB" value="H1.6" />
+      <property role="TrG5h" value="Vehicle departs the lane or roadway" />
+      <node concept="3h3uym" id="2AvdpHj_7M6" role="3h3uzw">
+        <ref role="3h3iM1" node="2AvdpHj_7Ka" resolve="OS6" />
+      </node>
+      <node concept="3Zv_sa" id="2AvdpHj_7Mk" role="3Zv_sA">
+        <ref role="3Zv_sb" node="2AvdpHj_7DI" resolve="Head-on accident." />
+      </node>
+    </node>
+  </node>
+  <node concept="8gVzP" id="2AvdpHj_7Mm">
+    <property role="TrG5h" value="_012_Highway_Chauffeur_System_For_H2" />
+    <property role="3GE5qa" value="012_Risk_Assessment_For_Vehicle_Level_Hazards" />
+    <node concept="8gVzc" id="2AvdpHj_7Mn" role="8gIbH">
+      <property role="TrG5h" value="Lane change into an obstructed or occupied space in the target lane Vehicle" />
+      <property role="0lsPB" value="H2" />
+      <node concept="3Zv_sa" id="2AvdpHj_7Mq" role="3Zv_sA">
+        <ref role="3Zv_sb" node="55oVyA0sYep" resolve="Sideswipe accident." />
+      </node>
+    </node>
+    <node concept="1a6Z8w" id="2AvdpHj_7Mw" role="8gIbH">
+      <property role="0lsPB" value="H2.1" />
+      <property role="TrG5h" value="Vehicle changes lanes into an obstructed or occupied space" />
+      <node concept="3h3uym" id="2AvdpHj_7MX" role="3h3uzw">
+        <ref role="3h3iM1" node="2AvdpHj_7IV" resolve="OS3" />
+      </node>
+      <node concept="3Zv_sa" id="2AvdpHj_7MZ" role="3Zv_sA">
+        <ref role="3Zv_sb" node="2AvdpHj_7HK" resolve="Forward impact." />
+      </node>
+    </node>
+    <node concept="1a6Z8w" id="2AvdpHj_7MH" role="8gIbH">
+      <property role="0lsPB" value="H2.2" />
+      <property role="TrG5h" value="Vehicle changes lanes into an obstructed or occupied space" />
+      <node concept="3Zv_sa" id="2AvdpHj_7N3" role="3Zv_sA">
+        <ref role="3Zv_sb" node="2AvdpHj_7HK" resolve="Forward impact." />
+      </node>
+      <node concept="3h3uym" id="2AvdpHj_7N1" role="3h3uzw">
+        <ref role="3h3iM1" node="2AvdpHj_7J7" resolve="OS4" />
+      </node>
+    </node>
+    <node concept="1a6Z8w" id="2AvdpHj_7MJ" role="8gIbH">
+      <property role="0lsPB" value="H2.3" />
+      <property role="TrG5h" value="Vehicle changes lanes into an obstructed or occupied space" />
+      <node concept="3Zv_sa" id="2AvdpHj_7Na" role="3Zv_sA">
+        <ref role="3Zv_sb" node="2AvdpHj_7Dl" resolve="Rear end collision." />
+      </node>
+      <node concept="3h3uym" id="2AvdpHj_7N6" role="3h3uzw">
+        <ref role="3h3iM1" node="2AvdpHj_7JS" resolve="OS5" />
+      </node>
+    </node>
+    <node concept="1a6Z8w" id="2AvdpHj_7ML" role="8gIbH">
+      <property role="0lsPB" value="H2.4" />
+      <property role="TrG5h" value="Vehicle changes lanes into an obstructed or occupied space" />
+      <node concept="3h3uym" id="2AvdpHj_7N8" role="3h3uzw">
+        <ref role="3h3iM1" node="55oVyA0sYeZ" resolve="OS1" />
+      </node>
+      <node concept="3Zv_sa" id="2AvdpHj_7Nd" role="3Zv_sA">
+        <ref role="3Zv_sb" node="2AvdpHj_7Dl" resolve="Rear end collision." />
+      </node>
+    </node>
+    <node concept="1a6Z8w" id="2AvdpHj_7Nz" role="8gIbH">
+      <property role="0lsPB" value="H2.5" />
+      <property role="TrG5h" value="Vehicle changes lanes into an obstructed or occupied space" />
+      <node concept="3h3uym" id="2AvdpHj_7NO" role="3h3uzw">
+        <ref role="3h3iM1" node="2AvdpHj_7Ka" resolve="OS6" />
+      </node>
+      <node concept="3Zv_sa" id="2AvdpHj_7NQ" role="3Zv_sA">
+        <ref role="3Zv_sb" node="2AvdpHj_7DI" resolve="Head-on accident." />
+      </node>
+    </node>
+  </node>
+  <node concept="8gVzP" id="2AvdpHj_7NS">
+    <property role="3GE5qa" value="012_Risk_Assessment_For_Vehicle_Level_Hazards" />
+    <property role="TrG5h" value="_012_Highway_Chauffeur_System_For_H3" />
+    <node concept="8gVzc" id="2AvdpHj_7NT" role="8gIbH">
+      <property role="TrG5h" value="Vehicle does not complete the lane change (partially between lanes)" />
+      <property role="0lsPB" value="H3" />
+      <node concept="3Zv_sa" id="2AvdpHj_7NY" role="3Zv_sA">
+        <ref role="3Zv_sb" node="55oVyA0sYep" resolve="Sideswipe accident." />
+      </node>
+    </node>
+    <node concept="1a6Z8w" id="2AvdpHj_7O4" role="8gIbH">
+      <property role="0lsPB" value="H3.1" />
+      <property role="TrG5h" value="Vehicle does not complete the lane change and operates between lanes" />
+      <node concept="3h3uym" id="2AvdpHj_7Ox" role="3h3uzw">
+        <ref role="3h3iM1" node="2AvdpHj_7IV" resolve="OS3" />
+      </node>
+      <node concept="3Zv_sa" id="2AvdpHj_7OD" role="3Zv_sA">
+        <ref role="3Zv_sb" node="2AvdpHj_7HK" resolve="Forward impact." />
+      </node>
+    </node>
+    <node concept="1a6Z8w" id="2AvdpHj_7Om" role="8gIbH">
+      <property role="0lsPB" value="H3.2" />
+      <property role="TrG5h" value="Vehicle does not complete the lane change and operates between lanes" />
+      <node concept="3h3uym" id="2AvdpHj_7Oz" role="3h3uzw">
+        <ref role="3h3iM1" node="2AvdpHj_7J7" resolve="OS4" />
+      </node>
+      <node concept="3Zv_sa" id="2AvdpHj_7OF" role="3Zv_sA">
+        <ref role="3Zv_sb" node="2AvdpHj_7HK" resolve="Forward impact." />
+      </node>
+    </node>
+    <node concept="1a6Z8w" id="2AvdpHj_7On" role="8gIbH">
+      <property role="0lsPB" value="H3.3" />
+      <property role="TrG5h" value="Vehicle does not complete the lane change and operates between lanes" />
+      <node concept="3h3uym" id="2AvdpHj_7OH" role="3h3uzw">
+        <ref role="3h3iM1" node="2AvdpHj_7JS" resolve="OS5" />
+      </node>
+      <node concept="3Zv_sa" id="2AvdpHj_7ON" role="3Zv_sA">
+        <ref role="3Zv_sb" node="2AvdpHj_7Dl" resolve="Rear end collision." />
+      </node>
+    </node>
+    <node concept="1a6Z8w" id="2AvdpHj_7Oo" role="8gIbH">
+      <property role="0lsPB" value="H3.4" />
+      <property role="TrG5h" value="Vehicle does not complete the lane change and operates between lanes" />
+      <node concept="3h3uym" id="2AvdpHj_7OJ" role="3h3uzw">
+        <ref role="3h3iM1" node="55oVyA0sYeZ" resolve="OS1" />
+      </node>
+      <node concept="3Zv_sa" id="2AvdpHj_7OP" role="3Zv_sA">
+        <ref role="3Zv_sb" node="2AvdpHj_7Dl" resolve="Rear end collision." />
+      </node>
+    </node>
+    <node concept="1a6Z8w" id="2AvdpHj_7Op" role="8gIbH">
+      <property role="0lsPB" value="H3.5" />
+      <property role="TrG5h" value="Vehicle does not complete the lane change and operates between lanes" />
+      <node concept="3h3uym" id="2AvdpHj_7OL" role="3h3uzw">
+        <ref role="3h3iM1" node="2AvdpHj_7Ka" resolve="OS6" />
+      </node>
+      <node concept="3Zv_sa" id="2AvdpHj_7OR" role="3Zv_sA">
+        <ref role="3Zv_sb" node="2AvdpHj_7DI" resolve="Head-on accident." />
+      </node>
+    </node>
+  </node>
+  <node concept="8gVzP" id="2AvdpHj_7OT">
+    <property role="3GE5qa" value="012_Risk_Assessment_For_Vehicle_Level_Hazards" />
+    <property role="TrG5h" value="_012_Highway_Chauffeur_System_For_H4" />
+    <node concept="8gVzc" id="2AvdpHj_7OU" role="8gIbH">
+      <property role="TrG5h" value="System interferes with operation of a higher-priority safety-critical system." />
+      <property role="0lsPB" value="H4" />
+      <node concept="3Zv_sa" id="2AvdpHj_7P3" role="3Zv_sA">
+        <ref role="3Zv_sb" node="3Jn$RV2VwqV" resolve="Property damage due to a vehicle collision." />
+      </node>
+      <node concept="3Zv_sa" id="2AvdpHj_7P8" role="3Zv_sA">
+        <ref role="3Zv_sb" node="3Jn$RV2VwqU" resolve="Loss of life or serious injury of in or out of the vehicle humans." />
+      </node>
+    </node>
+    <node concept="1a6Z8w" id="2AvdpHj_7Ph" role="8gIbH">
+      <property role="0lsPB" value="H4.1" />
+      <property role="TrG5h" value="System interferes with the operation of a higher-priority safety critical system (e.g., pedestrian avoidance or emergency steering)" />
+      <node concept="3h3uym" id="2AvdpHj_7PJ" role="3h3uzw">
+        <ref role="3h3iM1" node="2AvdpHj_7Pn" resolve="OS7" />
+      </node>
+      <node concept="3Zv_sa" id="2AvdpHj_7PL" role="3Zv_sA">
+        <ref role="3Zv_sb" node="2AvdpHj_7HK" resolve="Forward impact." />
+      </node>
+    </node>
+    <node concept="1a6Z8w" id="2AvdpHj_7PV" role="8gIbH">
+      <property role="0lsPB" value="H4.2" />
+      <property role="TrG5h" value="System interferes with the operation of a higher-priority safety critical system (e.g., electronic stability control)" />
+      <node concept="3h3uym" id="2AvdpHj_7UA" role="3h3uzw">
+        <ref role="3h3iM1" node="2AvdpHj_7SW" resolve="OS10" />
+      </node>
+      <node concept="3Zv_sa" id="2AvdpHj_7Vs" role="3Zv_sA">
+        <ref role="3Zv_sb" node="2AvdpHj_7Dd" resolve="Right/Left Roadside departure." />
+      </node>
+    </node>
+    <node concept="1a6Z8w" id="2AvdpHj_7UM" role="8gIbH">
+      <property role="TrG5h" value="System interferes with the operation of a higher-priority safety critical system (e.g., automatic emergency braking)" />
+      <property role="0lsPB" value="H4.3" />
+      <node concept="3h3uym" id="2AvdpHj_7UZ" role="3h3uzw">
+        <ref role="3h3iM1" node="2AvdpHj_7Sm" resolve="OS9" />
+      </node>
+      <node concept="3Zv_sa" id="2AvdpHj_7Vu" role="3Zv_sA">
+        <ref role="3Zv_sb" node="2AvdpHj_7Dl" resolve="Rear end collision." />
+      </node>
+    </node>
+    <node concept="1a6Z8w" id="2AvdpHj_7Vd" role="8gIbH">
+      <property role="TrG5h" value="System interferes with the operation of a higher-priority safety critical system (e.g., automatic emergency braking)" />
+      <property role="0lsPB" value="H4.4" />
+      <node concept="3h3uym" id="2AvdpHj_7Vq" role="3h3uzw">
+        <ref role="3h3iM1" node="2AvdpHj_7RP" resolve="OS8" />
+      </node>
+      <node concept="3Zv_sa" id="2AvdpHj_7Vw" role="3Zv_sA">
+        <ref role="3Zv_sb" node="2AvdpHj_7Dl" resolve="Rear end collision." />
       </node>
     </node>
   </node>
