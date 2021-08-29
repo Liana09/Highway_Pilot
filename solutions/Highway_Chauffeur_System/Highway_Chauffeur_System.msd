@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="Highway_Pilot" uuid="222c5010-c63b-4273-81a6-201695757449" moduleVersion="0" compileInMPS="true">
+<solution name="Highway_Chauffeur_System" uuid="222c5010-c63b-4273-81a6-201695757449" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -73,7 +73,7 @@
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
-    <module reference="222c5010-c63b-4273-81a6-201695757449(Highway_Pilot)" version="0" />
+    <module reference="222c5010-c63b-4273-81a6-201695757449(Highway_Chauffeur_System)" version="0" />
     <module reference="8fe22e59-5111-4d11-87a2-2938e839b2fd(com.fasten.req.ontology.lib)" version="0" />
     <module reference="4dc47fba-0f4f-4162-820b-d2e1e306482d(com.fasten.safety.ft.pluginSolution)" version="0" />
     <module reference="54912f5b-43b5-48a6-b710-8bbe3bcf9649(com.fasten.safety.ft.xfta.pluginSolution)" version="0" />
