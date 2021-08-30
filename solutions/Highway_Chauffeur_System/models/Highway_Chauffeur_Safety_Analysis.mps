@@ -210,9 +210,13 @@
         <child id="5861696777036914244" name="operationalSituationDeclarations" index="3h3F1H" />
       </concept>
       <concept id="5861696777036874343" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituationDeclaration" flags="ng" index="3h3iLe">
+        <property id="5476080298365952689" name="exposure" index="3qod2P" />
         <child id="5861696777036874344" name="description" index="3h3iL1" />
       </concept>
       <concept id="5861696777036826303" name="com.mbeddr.formal.safety.iso26262.structure.HazardContext" flags="ng" index="3h3uym">
+        <property id="5861696777036826305" name="exposure" index="3h3uzC" />
+        <property id="5861696777036826304" name="severity" index="3h3uzD" />
+        <property id="5861696777036826306" name="controlability" index="3h3uzF" />
         <reference id="5861696777036874408" name="operationalSituationDeclaration" index="3h3iM1" />
       </concept>
     </language>
@@ -1130,6 +1134,7 @@
     <property role="TrG5h" value="011_Highway_Chauffeur_System_Operational_Situations" />
     <node concept="3h3iLe" id="55oVyA0sYeZ" role="3h3F1H">
       <property role="TrG5h" value="OS1" />
+      <property role="3qod2P" value="24PsEXFbNL2/E1" />
       <node concept="19SGf9" id="55oVyA0sYf0" role="3h3iL1">
         <node concept="19SUe$" id="55oVyA0sYf1" role="19SJt6">
           <property role="19SUeA" value="when traveling on a paved/gravel shoulder lane, with non-roadway users permitted on the side of the road." />
@@ -1138,6 +1143,7 @@
     </node>
     <node concept="3h3iLe" id="2AvdpHj_7IM" role="3h3F1H">
       <property role="TrG5h" value="OS2" />
+      <property role="3qod2P" value="24PsEXFbNL2/E1" />
       <node concept="19SGf9" id="2AvdpHj_7IN" role="3h3iL1">
         <node concept="19SUe$" id="2AvdpHj_7IO" role="19SJt6">
           <property role="19SUeA" value="when traveling on a paved/gravel shoulder lane, with non-roadway users NOT permitted on the side of the road." />
@@ -1146,6 +1152,7 @@
     </node>
     <node concept="3h3iLe" id="2AvdpHj_7IV" role="3h3F1H">
       <property role="TrG5h" value="OS3" />
+      <property role="3qod2P" value="24PsEXFbNL2/E1" />
       <node concept="19SGf9" id="2AvdpHj_7IW" role="3h3iL1">
         <node concept="19SUe$" id="2AvdpHj_7IX" role="19SJt6">
           <property role="19SUeA" value="when traveling on a single lane roadway, with non-roadway users permitted on the side of the road." />
@@ -1154,6 +1161,7 @@
     </node>
     <node concept="3h3iLe" id="2AvdpHj_7J7" role="3h3F1H">
       <property role="TrG5h" value="OS4" />
+      <property role="3qod2P" value="24PsEXFbNL2/E1" />
       <node concept="19SGf9" id="2AvdpHj_7J8" role="3h3iL1">
         <node concept="19SUe$" id="2AvdpHj_7J9" role="19SJt6">
           <property role="19SUeA" value="when traveling on a single lane roadway, with non-roadway users NOT permitted on the side of the road." />
@@ -1162,6 +1170,7 @@
     </node>
     <node concept="3h3iLe" id="2AvdpHj_7JS" role="3h3F1H">
       <property role="TrG5h" value="OS5" />
+      <property role="3qod2P" value="24PsEXFbNL2/E1" />
       <node concept="19SGf9" id="2AvdpHj_7JT" role="3h3iL1">
         <node concept="19SUe$" id="2AvdpHj_7JU" role="19SJt6">
           <property role="19SUeA" value="when traveling on a multi-lane roadway or in a managed lane (e.g., HOV lane)." />
@@ -1170,6 +1179,7 @@
     </node>
     <node concept="3h3iLe" id="2AvdpHj_7Ka" role="3h3F1H">
       <property role="TrG5h" value="OS6" />
+      <property role="3qod2P" value="24PsEXFbNL2/E1" />
       <node concept="19SGf9" id="2AvdpHj_7Kb" role="3h3iL1">
         <node concept="19SUe$" id="2AvdpHj_7Kc" role="19SJt6">
           <property role="19SUeA" value="when traveling in a reversible lane." />
@@ -1178,6 +1188,7 @@
     </node>
     <node concept="3h3iLe" id="2AvdpHj_7Pn" role="3h3F1H">
       <property role="TrG5h" value="OS7" />
+      <property role="3qod2P" value="24PsEXFbNL2/E1" />
       <node concept="19SGf9" id="2AvdpHj_7Po" role="3h3iL1">
         <node concept="19SUe$" id="2AvdpHj_7Pp" role="19SJt6">
           <property role="19SUeA" value="when traveling on a roadway that permits non-vehicles on the road." />
@@ -1186,6 +1197,7 @@
     </node>
     <node concept="3h3iLe" id="2AvdpHj_7RP" role="3h3F1H">
       <property role="TrG5h" value="OS8" />
+      <property role="3qod2P" value="24PsEXFbNL2/E1" />
       <node concept="19SGf9" id="2AvdpHj_7RQ" role="3h3iL1">
         <node concept="19SUe$" id="2AvdpHj_7RR" role="19SJt6">
           <property role="19SUeA" value="when traveling on a paved/gravel shoulder lane, and non-vehicles are NOT permitted on the road." />
@@ -1194,6 +1206,7 @@
     </node>
     <node concept="3h3iLe" id="2AvdpHj_7Sm" role="3h3F1H">
       <property role="TrG5h" value="OS9" />
+      <property role="3qod2P" value="24PsEXFbNL2/E1" />
       <node concept="19SGf9" id="2AvdpHj_7Sn" role="3h3iL1">
         <node concept="19SUe$" id="2AvdpHj_7So" role="19SJt6">
           <property role="19SUeA" value="when traveling on a multi-lane roadway or on a managed lane (e.g., HOV), and non-vehicles are NOT permitted on the road." />
@@ -1202,6 +1215,7 @@
     </node>
     <node concept="3h3iLe" id="2AvdpHj_7SW" role="3h3F1H">
       <property role="TrG5h" value="OS10" />
+      <property role="3qod2P" value="24PsEXFbNL2/E1" />
       <node concept="19SGf9" id="2AvdpHj_7SX" role="3h3iL1">
         <node concept="19SUe$" id="2AvdpHj_7SY" role="19SJt6">
           <property role="19SUeA" value="when traveling on a single-lane roadway or in a reversible lane, and non-vehicles are NOT permitted on the road." />
@@ -1223,6 +1237,9 @@
       <property role="0lsPB" value="H1.1" />
       <property role="TrG5h" value="Vehicle departs the lane or roadway" />
       <node concept="3h3uym" id="2AvdpHj_7KI" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNL2/E1" />
+        <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
         <ref role="3h3iM1" node="55oVyA0sYeZ" resolve="OS1" />
       </node>
       <node concept="3Zv_sa" id="2AvdpHj_7M8" role="3Zv_sA">
@@ -1233,6 +1250,9 @@
       <property role="0lsPB" value="H1.2" />
       <property role="TrG5h" value="Vehicle departs the lane or roadway" />
       <node concept="3h3uym" id="2AvdpHj_7Lt" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNL2/E1" />
+        <property role="3h3uzD" value="24PsEXFbNKN/S1" />
+        <property role="3h3uzF" value="24PsEXFbNLm/C1" />
         <ref role="3h3iM1" node="2AvdpHj_7IM" resolve="OS2" />
       </node>
       <node concept="3Zv_sa" id="2AvdpHj_7Me" role="3Zv_sA">
@@ -1243,6 +1263,9 @@
       <property role="0lsPB" value="H1.3" />
       <property role="TrG5h" value="Vehicle departs the lane or roadway" />
       <node concept="3h3uym" id="2AvdpHj_7Lv" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNL2/E1" />
+        <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
         <ref role="3h3iM1" node="2AvdpHj_7IV" resolve="OS3" />
       </node>
       <node concept="3Zv_sa" id="2AvdpHj_7Mc" role="3Zv_sA">
@@ -1253,6 +1276,9 @@
       <property role="0lsPB" value="H1.4" />
       <property role="TrG5h" value="Vehicle departs the lane or roadway" />
       <node concept="3h3uym" id="2AvdpHj_7Lz" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNL2/E1" />
+        <property role="3h3uzD" value="24PsEXFbNKN/S1" />
+        <property role="3h3uzF" value="24PsEXFbNLm/C1" />
         <ref role="3h3iM1" node="2AvdpHj_7J7" resolve="OS4" />
       </node>
       <node concept="3Zv_sa" id="2AvdpHj_7Mg" role="3Zv_sA">
@@ -1263,6 +1289,9 @@
       <property role="0lsPB" value="H1.5" />
       <property role="TrG5h" value="Vehicle departs the lane or roadway" />
       <node concept="3h3uym" id="2AvdpHj_7L_" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNL2/E1" />
+        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
         <ref role="3h3iM1" node="2AvdpHj_7JS" resolve="OS5" />
       </node>
       <node concept="3Zv_sa" id="2AvdpHj_7Mi" role="3Zv_sA">
@@ -1273,6 +1302,9 @@
       <property role="0lsPB" value="H1.6" />
       <property role="TrG5h" value="Vehicle departs the lane or roadway" />
       <node concept="3h3uym" id="2AvdpHj_7M6" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNL2/E1" />
+        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
         <ref role="3h3iM1" node="2AvdpHj_7Ka" resolve="OS6" />
       </node>
       <node concept="3Zv_sa" id="2AvdpHj_7Mk" role="3Zv_sA">
@@ -1294,6 +1326,9 @@
       <property role="0lsPB" value="H2.1" />
       <property role="TrG5h" value="Vehicle changes lanes into an obstructed or occupied space" />
       <node concept="3h3uym" id="2AvdpHj_7MX" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNL2/E1" />
+        <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
         <ref role="3h3iM1" node="2AvdpHj_7IV" resolve="OS3" />
       </node>
       <node concept="3Zv_sa" id="2AvdpHj_7MZ" role="3Zv_sA">
@@ -1307,6 +1342,9 @@
         <ref role="3Zv_sb" node="2AvdpHj_7HK" resolve="Forward impact." />
       </node>
       <node concept="3h3uym" id="2AvdpHj_7N1" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNL2/E1" />
+        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
         <ref role="3h3iM1" node="2AvdpHj_7J7" resolve="OS4" />
       </node>
     </node>
@@ -1317,6 +1355,9 @@
         <ref role="3Zv_sb" node="2AvdpHj_7Dl" resolve="Rear end collision." />
       </node>
       <node concept="3h3uym" id="2AvdpHj_7N6" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNL2/E1" />
+        <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
         <ref role="3h3iM1" node="2AvdpHj_7JS" resolve="OS5" />
       </node>
     </node>
@@ -1324,6 +1365,9 @@
       <property role="0lsPB" value="H2.4" />
       <property role="TrG5h" value="Vehicle changes lanes into an obstructed or occupied space" />
       <node concept="3h3uym" id="2AvdpHj_7N8" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNL2/E1" />
+        <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
         <ref role="3h3iM1" node="55oVyA0sYeZ" resolve="OS1" />
       </node>
       <node concept="3Zv_sa" id="2AvdpHj_7Nd" role="3Zv_sA">
@@ -1334,6 +1378,9 @@
       <property role="0lsPB" value="H2.5" />
       <property role="TrG5h" value="Vehicle changes lanes into an obstructed or occupied space" />
       <node concept="3h3uym" id="2AvdpHj_7NO" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNL2/E1" />
+        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
         <ref role="3h3iM1" node="2AvdpHj_7Ka" resolve="OS6" />
       </node>
       <node concept="3Zv_sa" id="2AvdpHj_7NQ" role="3Zv_sA">
@@ -1355,6 +1402,9 @@
       <property role="0lsPB" value="H3.1" />
       <property role="TrG5h" value="Vehicle does not complete the lane change and operates between lanes" />
       <node concept="3h3uym" id="2AvdpHj_7Ox" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNL2/E1" />
+        <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
         <ref role="3h3iM1" node="2AvdpHj_7IV" resolve="OS3" />
       </node>
       <node concept="3Zv_sa" id="2AvdpHj_7OD" role="3Zv_sA">
@@ -1365,6 +1415,9 @@
       <property role="0lsPB" value="H3.2" />
       <property role="TrG5h" value="Vehicle does not complete the lane change and operates between lanes" />
       <node concept="3h3uym" id="2AvdpHj_7Oz" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNL2/E1" />
+        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
         <ref role="3h3iM1" node="2AvdpHj_7J7" resolve="OS4" />
       </node>
       <node concept="3Zv_sa" id="2AvdpHj_7OF" role="3Zv_sA">
@@ -1375,6 +1428,9 @@
       <property role="0lsPB" value="H3.3" />
       <property role="TrG5h" value="Vehicle does not complete the lane change and operates between lanes" />
       <node concept="3h3uym" id="2AvdpHj_7OH" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNL2/E1" />
+        <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
         <ref role="3h3iM1" node="2AvdpHj_7JS" resolve="OS5" />
       </node>
       <node concept="3Zv_sa" id="2AvdpHj_7ON" role="3Zv_sA">
@@ -1385,6 +1441,9 @@
       <property role="0lsPB" value="H3.4" />
       <property role="TrG5h" value="Vehicle does not complete the lane change and operates between lanes" />
       <node concept="3h3uym" id="2AvdpHj_7OJ" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNL2/E1" />
+        <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
         <ref role="3h3iM1" node="55oVyA0sYeZ" resolve="OS1" />
       </node>
       <node concept="3Zv_sa" id="2AvdpHj_7OP" role="3Zv_sA">
@@ -1395,6 +1454,9 @@
       <property role="0lsPB" value="H3.5" />
       <property role="TrG5h" value="Vehicle does not complete the lane change and operates between lanes" />
       <node concept="3h3uym" id="2AvdpHj_7OL" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNL2/E1" />
+        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
         <ref role="3h3iM1" node="2AvdpHj_7Ka" resolve="OS6" />
       </node>
       <node concept="3Zv_sa" id="2AvdpHj_7OR" role="3Zv_sA">
@@ -1419,6 +1481,9 @@
       <property role="0lsPB" value="H4.1" />
       <property role="TrG5h" value="System interferes with the operation of a higher-priority safety critical system (e.g., pedestrian avoidance or emergency steering)" />
       <node concept="3h3uym" id="2AvdpHj_7PJ" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNL2/E1" />
+        <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
         <ref role="3h3iM1" node="2AvdpHj_7Pn" resolve="OS7" />
       </node>
       <node concept="3Zv_sa" id="2AvdpHj_7PL" role="3Zv_sA">
@@ -1429,6 +1494,9 @@
       <property role="0lsPB" value="H4.2" />
       <property role="TrG5h" value="System interferes with the operation of a higher-priority safety critical system (e.g., electronic stability control)" />
       <node concept="3h3uym" id="2AvdpHj_7UA" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNL2/E1" />
+        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
         <ref role="3h3iM1" node="2AvdpHj_7SW" resolve="OS10" />
       </node>
       <node concept="3Zv_sa" id="2AvdpHj_7Vs" role="3Zv_sA">
@@ -1439,6 +1507,9 @@
       <property role="TrG5h" value="System interferes with the operation of a higher-priority safety critical system (e.g., automatic emergency braking)" />
       <property role="0lsPB" value="H4.3" />
       <node concept="3h3uym" id="2AvdpHj_7UZ" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNL2/E1" />
+        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
         <ref role="3h3iM1" node="2AvdpHj_7Sm" resolve="OS9" />
       </node>
       <node concept="3Zv_sa" id="2AvdpHj_7Vu" role="3Zv_sA">
@@ -1449,6 +1520,9 @@
       <property role="TrG5h" value="System interferes with the operation of a higher-priority safety critical system (e.g., automatic emergency braking)" />
       <property role="0lsPB" value="H4.4" />
       <node concept="3h3uym" id="2AvdpHj_7Vq" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNL2/E1" />
+        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
         <ref role="3h3iM1" node="2AvdpHj_7RP" resolve="OS8" />
       </node>
       <node concept="3Zv_sa" id="2AvdpHj_7Vw" role="3Zv_sA">
@@ -2411,8 +2485,8 @@
             <property role="3ul5GH" value="label" />
             <node concept="3wpmZ1" id="7YcQXnNN3Vu" role="3ul5Gz">
               <node concept="2VclrF" id="7YcQXnNN3Vv" role="3wpmZR">
-                <property role="2Vclpx" value="-246.71428571428493" />
-                <property role="2Vclpz" value="418.809523809524" />
+                <property role="2Vclpx" value="-253.71428571428572" />
+                <property role="2Vclpz" value="411.42857142857144" />
               </node>
               <node concept="2VclrF" id="7YcQXnNN3Vw" role="3wpmZP">
                 <property role="2Vclpx" value="0.0" />
