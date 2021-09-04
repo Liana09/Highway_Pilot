@@ -11,6 +11,11 @@
     </facet>
   </facets>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">4405c79a-2cec-40b3-b09e-a2a5fd99a7f6(com.mbeddr.formal.safety.gsn.sandbox)</dependency>
+    <dependency reexport="false">676b5323-9c6d-4b8d-a4fc-5d159c3d8aed(com.mbeddr.formal.safety.gsn.patterns.lib)</dependency>
+    <dependency reexport="false">071b5ba2-f8f1-4bc1-9ed3-d3bb1f3fedd3(Pattern_Catalogue)</dependency>
+  </dependencies>
   <languageVersions>
     <language slang="l:f52452b6-7f99-441b-98f9-a98c52b92236:com.fasten.req.odd" version="1" />
     <language slang="l:65ed2ac6-4499-4751-951e-3819684a4b8d:com.fasten.req.ontology" version="1" />
@@ -48,6 +53,7 @@
     <language slang="l:5ff577d1-1817-495b-9d6c-ff7b52c68609:com.mbeddr.formal.req.tl_patterns" version="0" />
     <language slang="l:0054a0d7-50ff-4b4f-beff-7e9b376d56a1:com.mbeddr.formal.req.tl_patterns.arch" version="0" />
     <language slang="l:b9f682be-3e03-4c97-ba0a-ac14cf89f12a:com.mbeddr.formal.req.tl_patterns.nusmv" version="0" />
+    <language slang="l:eb32334c-372a-488f-ba9b-e549a59115e9:com.mbeddr.formal.safety.cae" version="0" />
     <language slang="l:e8a04d94-4307-4f88-95a2-25f7c4f39437:com.mbeddr.formal.safety.gsn" version="0" />
     <language slang="l:00a2e56d-f195-410b-8afe-5a3c7e505658:com.mbeddr.formal.safety.gsn.confidence.acp" version="0" />
     <language slang="l:d2864642-8e1f-4dd8-b3a6-71f0d9d33ae8:com.mbeddr.formal.safety.gsn.confidence.dempster_shafer" version="0" />
@@ -74,10 +80,13 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="222c5010-c63b-4273-81a6-201695757449(Highway_Chauffeur_System)" version="0" />
+    <module reference="071b5ba2-f8f1-4bc1-9ed3-d3bb1f3fedd3(Pattern_Catalogue)" version="0" />
     <module reference="8fe22e59-5111-4d11-87a2-2938e839b2fd(com.fasten.req.ontology.lib)" version="0" />
     <module reference="4dc47fba-0f4f-4162-820b-d2e1e306482d(com.fasten.safety.ft.pluginSolution)" version="0" />
     <module reference="54912f5b-43b5-48a6-b710-8bbe3bcf9649(com.fasten.safety.ft.xfta.pluginSolution)" version="0" />
     <module reference="263ebba5-d9c9-4f02-b38c-e344aa263f98(com.mbeddr.formal.nuxmv.pluginSolution)" version="0" />
+    <module reference="676b5323-9c6d-4b8d-a4fc-5d159c3d8aed(com.mbeddr.formal.safety.gsn.patterns.lib)" version="0" />
+    <module reference="4405c79a-2cec-40b3-b09e-a2a5fd99a7f6(com.mbeddr.formal.safety.gsn.sandbox)" version="0" />
   </dependencyVersions>
 </solution>
 
